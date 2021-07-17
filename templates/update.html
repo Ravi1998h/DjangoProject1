@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Add New Employee Records{% endblock title %}
+
+{% block content %}
+
+<div class="col-md-12">
+<h3 style="color:green">Update Details</h3>
+ <form method="POST" class="post-form" action="">
+   {{employee.as_p}}
+   {% csrf_token %}
+  <button type="submit" class="btn btn-success btn-lg">Update</button>
+  </div>
+ </form>
+{% endblock content %}
